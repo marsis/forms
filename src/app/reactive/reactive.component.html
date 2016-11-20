@@ -1,0 +1,11 @@
+<input type=text [formControl]="userName"/>
+{{o | async}}
+
+<div [formGroup]="dateRange">
+  <input type="date" formControlName="from">
+  <input type="date" formControlName="to">
+</div>
+<form [formGroup]="registrationForm">
+<input type="text" formControlName="username">
+<input type="text" formControlName="passwordGroup">
+</form>

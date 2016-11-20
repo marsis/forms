@@ -1,0 +1,15 @@
+<form  #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+
+  <div ngModelGroup="fullName">
+    <input type="text" name="firstname" ngModel />
+    <input type="text" name="lastname" ngModel />
+
+  </div>
+
+
+  <input type="text" name="username" ngModel #c="ngModel"/>
+  <input type="text" name="lname" ngModel #v="ngModel"/>
+{{c.value}}
+
+<input type="submit" value="GO!">
+</form>
